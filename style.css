@@ -1,6 +1,10 @@
 body{
-    color: rgb(69, 143, 227);
-    background-color: lightblue;
+    color: black;
+    background: lightblue;
     text-align: center;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+a{
+    color: black;
 }
