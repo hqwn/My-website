@@ -1,10 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cause&display=swap');
+
+:root{
+    --bg: #65DEF1;
+    --lightbg: #A8DCD1;
+    --middle: #DCE2C8;
+    --darkaccent: #f69e5f;
+    --lightaccent: #ecae80;
+
+}
+
+
 body{
     color: black;
-    background: lightblue;
+    background-image: linear-gradient(90deg, var(--lightbg), var(--bg));
     text-align: center;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Cause", cursive;
 }
 
 a{
     color: black;
+}
+
+header{
+    text-align: right;
+    vertical-align: top;
+    margin: 30px;
+    background-image: linear-gradient(90deg,  var(--middle), #eaf3ce);
+    padding: 10px;
+    border-radius: 13px;
+    padding-right:  50px;
+}
+
+header a{
+    padding-right: 14px;
+    text-decoration:none;
+}
+
+.projects{
+    display: flex;
+    justify-content: center;
+}
+.projects div{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    font-size: 30px;
+    margin: 40px;
+    background-color: #057fd163;
+}
+.projects div:hover{
+    animation: wobble infinite ease-in-out 2s alternate;
+}
+
+.projects div p{
+    color: rgb(0, 0, 0);
+    font-family: "Cause", cursive;
+}
+
+
+.links_container{
+    display: flex;
+    justify-content: center;
+}
+
+.links_container div{
+    margin: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+}
+
+.links_container div:hover{
+    animation: throb infinite ease-in-out 2s alternate;
+}
+
+.github{
+    background-image: url('github.png');
+    background-size:  cover;
+}
+.linkedin{
+    background-image: url('linkedin.png');
+    background-size:  cover;
+}
+.youtube{
+    background-image: url('youtube.png');
+    background-size:  cover;
+}
+
+@keyframes wobble{
+    0%{transform: rotate(-20deg);}
+    100%{transform: rotate(20deg);}
+}
+
+@keyframes throb{
+    0%{transform: scale(1.2);}
+    100%{transform: scale(.8);}
 }
